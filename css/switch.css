@@ -1,0 +1,122 @@
+/* structure */
+.switch				{padding:20px !important;}
+.preload			{margin:150px 0;}
+.preload .header,
+.preload img.logo	{margin-bottom:30px;}
+.preload .lcol		{width:240px; margin:0 22px}
+.preload .rcol		{width:290px;}
+.preload p			{margin-top:0;}
+.preload .summary	{padding:10px 0; font-size:1.6em; border-style:dotted none; border-width:4px; border-color:black;}
+
+.play img.logo		{margin-bottom:12px;}
+.play .summary		{margin:29px 0 0 10px; width:225px; padding:12px 0; font-size:1.17em; border-style:dotted none; border-width:4px; border-color:black;}
+.play .edit .lcol,
+.play .lcol			{width:344px; padding:0; overflow:hidden; margin-top:1px}
+.play .edit .rcol	{width:310px; margin-left:345px;}
+.play .rcol			{margin-left:345px; border-top:1px solid white;} /* border hack to trip top margin respect in children */
+.play .body			{margin:0 !important; padding-top:12px !important}
+.play .content .body	{padding:0 !important}
+
+.switch .game,
+.switch .content	{position:relative;}
+
+#thankyoudialog,
+#suggestdialog		{position:absolute; top:0; left:0; z-index:20; background:white; width:100%;} 
+
+#thankyoudialog		{width:auto; padding:82px}
+#thankyoudialog p	{margin:0 0 22px 0}
+#thankyoudialog .score .center	{text-align:center; padding:12px 0; margin:38px 0}
+
+#gameboard			{background:#000;}
+#gameboard,
+#savescoredialog,
+.description		{margin-top:14px;}
+
+#scoreboard .selected,
+#scoreboard .rejected			{height:334px; overflow:auto;}
+.total				{font-size:1.4em; color:white; background:#000; padding:6px;}
+.goal				{font-size:1.2em; background:#bbb; padding:4px;}
+
+#scoreboard .actions,
+.postgame			{margin:12px 0;}
+
+.footer				{}
+
+
+
+
+/* common */
+.switch h1,
+.switch h2,
+.switch h3,
+.switch h4,
+.switch h5 {color:#000 !important; text-transform: uppercase;}
+
+#matchesdialog h1,
+#matchesdialog h2,
+#matchesdialog h3,
+#matchesdialog h4,
+#matchesdialog h5 {color:#fff !important; text-transform: none;}
+
+.hidden			{visibility:hidden}
+
+.switch td		{text-align:left; font-weight:bolder; font-size:1.1em}
+.switch td.icon		{width:40px; padding:4px;}
+.switch td.value	{text-align:right}
+
+.play .formlabel	{font-size:1.2em}
+
+
+
+
+/* ui */
+ul.tabbar		{list-style:none; border-bottom:2px solid #000; font-weight:bolder; margin:0; padding:0 0 13px 20px;}
+ul.tabbar li	{float:left;}
+ul.tabbar li a	{float:left; display:block; cursor:pointer}
+
+ul.tabbar li.active 	{
+	padding-left:12px;
+	background:white url('http://www.tekimaki.com/clients/bw/themes/styles/aqua2/images/tabedge.gif') no-repeat left top;
+}
+ul.tabbar li.active a	{
+	padding-right:12px;
+	background:url('http://www.tekimaki.com/clients/bw/themes/styles/aqua2/images/tabedge.gif') no-repeat right top;
+}
+
+.actions	{padding:10px; text-align:center;}
+.switch .submit input,		
+.btn	{cursor:pointer; color:white; background:#000; padding:6px 10px; font-size:1.2em; margin-right:20px; text-transform: uppercase; border:none}
+a.suggest {cursor:pointer; color:#1A9AB7;}
+
+
+
+
+/* game */
+.card			{cursor:pointer; display:block; float:left; border:1px solid #999; overflow:hidden}
+.upcard			{}
+
+#matchesdialog {width:554px; background:#000; color:#fff; padding:20px; position:absolute; top:60px; left:0; right:0; margin:0 auto; text-align:center; z-index:10;}
+#matchesdialog .btn	{border:1px solid #fff}
+
+
+
+
+
+/* take care of some nasties */
+
+.switch #edit_score .clear	{clear:none}
+.switch legend				{display:none !important}
+.switch fieldset			{border:none; margin:0; padding:0}
+#content .switch .edit		{padding:0} 
+
+.switch #edit_suggestion textarea			{width:100%}
+.switch #edit_suggestion .lcol textarea		{width:94%}
+.switch	#edit_suggestion .lcol input		{width:94%}
+.switch #edit_suggestion .submit			{margin-top:32px}
+
+.switch	.fieldlabel,
+.switch input,
+.switch textarea	{font-size:1.2em; font-weight:normal; color:#333}
+
+.switch	.fieldlabel	{margin:4px 0;}
+

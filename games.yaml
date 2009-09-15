@@ -1,0 +1,11 @@
+games:
+  - {
+     type:switch
+     class:GameSwitch
+     handler_file:GameSwitch.php
+     title:Switch
+     summary:Light up New York City's electric grid by deciding how the city should conserve or produce energy.
+     description:Switch is a card game of memory. Players learn about energy conservation and production measures being considered in New York City.
+     instructions:Click any card to view it, then choose another to look for a match. Can match them all? When you find a match, decide whether you want to make it part of New York's electricity plan.
+     format_guid:bithtml
+}
