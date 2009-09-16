@@ -1,16 +1,13 @@
 <?php
 /**
-* $Header: /cvsroot/bitweaver/_bit_energymeasures/BitEnergyMeasures.php,v 1.1 2009/09/15 15:01:13 wjames5 Exp $
-* $Id: BitEnergyMeasures.php,v 1.1 2009/09/15 15:01:13 wjames5 Exp $
+* $Header: /cvsroot/bitweaver/_bit_energymeasures/BitEnergyMeasures.php,v 1.2 2009/09/16 20:54:00 wjames5 Exp $
+* $Id: BitEnergyMeasures.php,v 1.2 2009/09/16 20:54:00 wjames5 Exp $
 */
 
 /**
-* EnergyMeasures class to illustrate best practices when creating a new bitweaver package that
-* builds on core bitweaver functionality, such as the Liberty CMS engine
-*
-* date created 2004/8/15
-* @author spider <spider@steelsun.com>
-* @version $Revision: 1.1 $ $Date: 2009/09/15 15:01:13 $ $Author: wjames5 $
+* date created 2009/9/1
+* @author Will James <will@tekimaki.com>
+* @version $Revision: 1.2 $ $Date: 2009/09/16 20:54:00 $ $Author: wjames5 $
 * @class BitEnergyMeasures
 */
 
