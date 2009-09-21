@@ -51,7 +51,6 @@
 					// is there zero,one,or more up cards
 					var upcards = cardGrid.find('.upcard');
 					var count = upcards.length;
-					console.log( count );
 					switch( count ){
 						case 0:
 							// nothing to check continue
@@ -60,18 +59,12 @@
 							// is this a match
 							$upcard = $(upcards[0]);
 							if( $el.data('cardId') == $upcard.data('cardId') ){
-							console.log(  $el.data('cardId')  );
-							console.log( $upcard.data('cardId') );
 								// yes -  display match option
 								matchCardId = $el.data('cardId');
 								self.alertMatchDialog( $el.data('cardId') );
 							}else{
-							console.log(  $el.data('cardId')  );
-							console.log( $upcard.data('cardId') );
-							console.log( 'settimeout' );
 								// no - set timer to hide
 								setTimeout( function(){
-									console.log('flipback');
 									self.flipCard($el);
 									self.flipCard($upcard);
 								}, 1500);
