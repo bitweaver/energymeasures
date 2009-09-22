@@ -1,19 +1,24 @@
+/*
+ * light blue #D4EFFC
+ * medium blue #4E84C4
+ */
 /* structure */
-.switch				{padding:20px !important;}
+.switch				{padding:0 20px 20px 20px !important; background:#13143B !important; color:#fff !important}
 .preload			{margin:150px 0;}
 .preload .header,
 .preload img.logo	{margin-bottom:30px;}
 .preload .lcol		{width:240px; margin:0 22px}
 .preload .rcol		{width:290px;}
 .preload p			{margin-top:0;}
-.preload .summary	{padding:10px 0; font-size:1.6em; border-style:dotted none; border-width:4px; border-color:black;}
+.preload .summary	{padding:10px 0; font-size:1.6em; border-style:dotted none; border-width:2px; border-color:#4E84C4;}
 
+.switch .bgcontainer	{background:url('http://www.tekimaki.com/clients/bw/energymeasures/images/switch_bg.gif') repeat-x left top; padding:20px}
 .play img.logo		{margin-bottom:12px;}
-.play .summary		{margin:29px 0 0 10px; width:225px; padding:12px 0; font-size:1.17em; border-style:dotted none; border-width:4px; border-color:black;}
+.play .summary		{margin:29px 0 0 10px; width:225px; padding:12px 0; font-size:1.17em; border-style:dotted none; border-width:2px; border-color:#4E84C4;}
 .play .edit .lcol,
 .play .lcol			{width:344px; padding:0; overflow:hidden; margin-top:1px}
 .play .edit .rcol	{width:310px; margin-left:345px;}
-.play .rcol			{margin-left:345px; border-top:1px solid white;} /* border hack to trip top margin respect in children */
+.play .rcol			{margin-left:345px; border-top:1px solid #13133B;} /* border hack to trip top margin respect in children */
 .play .body			{margin:0 !important; padding-top:12px !important}
 .play .content .body	{padding:0 !important}
 
@@ -21,13 +26,13 @@
 .switch .content	{position:relative;}
 
 #thankyoudialog,
-#suggestdialog		{position:absolute; top:0; left:0; z-index:20; background:white; width:100%;} 
+#suggestdialog		{position:absolute; top:0; left:0; z-index:20; background:#000; width:100%;} 
 
 #thankyoudialog		{width:auto; padding:82px}
 #thankyoudialog p	{margin:0 0 22px 0}
 #thankyoudialog .score .center	{text-align:center; padding:12px 0; margin:38px 0}
 
-#gameboard			{background:#000;}
+#gameboard			{background:url('http://www.tekimaki.com/clients/bw/energymeasures/images/gameboard_bg.png') no-repeat left top;}
 #gameboard,
 #savescoredialog,
 .description		{margin-top:14px;}
@@ -46,11 +51,13 @@
 
 
 /* common */
+.switch a:link,
+.switch a:visited 	{color:#4E84C4}
 .switch h1,
 .switch h2,
 .switch h3,
 .switch h4,
-.switch h5 {color:#000 !important; text-transform: uppercase;}
+.switch h5 {color:#D4EFFC !important; font-family:"Arial Rounded MT Bold", Arial, Helvetica, sans-serif; font-weight:normal;}
 
 #matchesdialog h1,
 #matchesdialog h2,
@@ -64,13 +71,17 @@
 .switch td.icon		{width:40px; padding:4px;}
 .switch td.value	{text-align:right}
 
+.play .header h2	{font-family:"Arial Rounded MT Bold", Arial, Helvetica, sans-serif; font-weight:normal; color:#4E84C4 !important; text-transform:uppercase; margin-bottom:10px;}
 .play .formlabel	{font-size:1.2em}
+
+.switch .options strong,
+.switch .footer strong {text-transform:uppercase; color:#4E84C4}
 
 
 
 
 /* ui */
-ul.tabbar		{list-style:none; border-bottom:2px solid #000; font-weight:bolder; margin:0; padding:0 0 13px 20px;}
+ul.tabbar		{list-style:none; border-bottom:2px solid #4E84C4; font-weight:bolder; margin:0; padding:0 0 13px 20px;}
 ul.tabbar li	{float:left;}
 ul.tabbar li a	{float:left; display:block; cursor:pointer}
 
@@ -86,13 +97,13 @@ ul.tabbar li.active a	{
 .actions	{padding:10px; text-align:center;}
 .switch .submit input,		
 .btn	{cursor:pointer; color:white; background:#000; padding:6px 10px; font-size:1.2em; margin-right:20px; text-transform: uppercase; border:none}
-a.suggest {cursor:pointer; color:#1A9AB7;}
+a.suggest {cursor:pointer; color:#4E84C4;}
 
 
 
 
 /* game */
-.card			{cursor:pointer; display:block; float:left; border:1px solid #999; overflow:hidden}
+.card			{cursor:pointer; display:block; float:left; border:1px solid #666; overflow:hidden}
 .upcard			{}
 
 #matchesdialog {width:554px; background:#000; color:#fff; padding:20px; position:absolute; top:60px; left:0; right:0; margin:0 auto; text-align:center; z-index:10;}

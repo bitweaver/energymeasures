@@ -1,5 +1,6 @@
 {strip}
 <div class="display energymeasures game switch">
+	<div class="bgcontainer">
 	{* the pre-load view *}
 	<div class="preload" style="display:none">
 		<div class="body">
@@ -28,7 +29,10 @@
 	<div class="play" {*style="display:none"*}>
 		<div class="header">
 			<div class="floatleft">
+				<h2>Gotham Gazette’s</h2>
+				{*
 				<img class="logo" src="{$smarty.const.THEMES_STYLE_URL}images/gglogo_sm.png" alt="Gotham Gazette's"/><br />
+				*}
 				<img src="{$smarty.const.THEMES_STYLE_URL}images/switchlogo_sm.png" alt="{$game.title}"/><br />
 			</div>
 			<div class="summary floatleft">
@@ -111,9 +115,10 @@
 	<div class="footer clear">
 		<p>
 			<span class="floatright">Copyright &copy; 2009 Citizens Union Foundation</span>
-			{tr}<strong>LEARN MORE</strong> about New York City's electricity needs and policy options at <a href="http://www.gothamgazette.com">www.gothamgazette.com</a>{/tr}
+			{tr}<strong>Learn More</strong> about New York City's electricity needs and policy options at <a href="http://www.gothamgazette.com">www.gothamgazette.com</a>{/tr}
 		</p>
 	</div> <!-- end .footer -->
+	</div> <!-- end .bgcontainer -->
 </div> <!-- end .display -->
 
 <script type="text/javascript">
