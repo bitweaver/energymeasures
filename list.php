@@ -1,5 +1,5 @@
 <?php
-// $Header: /cvsroot/bitweaver/_bit_energymeasures/list.php,v 1.1 2009/09/15 15:01:13 wjames5 Exp $
+// $Header: /cvsroot/bitweaver/_bit_energymeasures/list.php,v 1.2 2009/09/22 06:29:59 wjames5 Exp $
 // Copyright (c) 2004 bitweaver EnergyMeasures
 // All Rights Reserved. See copyright.txt for details and a complete list of authors.
 // Licensed under the GNU LESSER GENERAL PUBLIC LICENSE. See license.txt for details.
@@ -65,5 +65,3 @@ $gBitSmarty->assign_by_ref( 'listInfo', $_REQUEST['listInfo'] );
 
 // Display the template
 $gBitSystem->display( 'bitpackage:energymeasures/list_energymeasures.tpl', tra( 'EnergyMeasures' ) , array( 'display_mode' => 'list' ));
-
-?>

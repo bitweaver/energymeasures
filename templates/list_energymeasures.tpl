@@ -1,4 +1,4 @@
-{* $Header: /cvsroot/bitweaver/_bit_energymeasures/templates/list_energymeasures.tpl,v 1.1 2009/09/15 15:01:13 wjames5 Exp $ *}
+{* $Header: /cvsroot/bitweaver/_bit_energymeasures/templates/list_energymeasures.tpl,v 1.2 2009/09/22 06:29:59 wjames5 Exp $ *}
 {strip}
 <div class="floaticon">{bithelp}</div>
 
@@ -48,7 +48,12 @@
 						{/if}
 
 						{if $gBitSystem->isFeatureActive( 'energymeasures_list_data' )}
-							<td>{$energymeasures.data|escape}</td>
+							<td>
+								<img src="{$energymeasures.thumbnail_urls.medium}" class="floatleft">
+								<strong>Type: {$energymeasures.type}</strong><br />
+								<strong>MwH: {$energymeasures.mwh}</strong><br />
+								{$energymeasures.data|escape}
+							</td>
 						{/if}
 
 						<td class="actionicon">
