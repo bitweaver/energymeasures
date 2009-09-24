@@ -97,8 +97,8 @@
 									</table>
 								</div>
 								<div class="actions">
-									<a class="endgame"><img src="{$smarty.const.ENERGYMEASURES_PKG_URL}images/switch_icon.png">Flip The Switch</a>
-									<a class="playagain">Reshuffle</a>
+									<a class="endgame"><img class="floatleft" src="{$smarty.const.ENERGYMEASURES_PKG_URL}images/switch_icon.png"><span>{tr}FLIP The SWITCH{/tr}</span></a>
+									<a class="playagain">{tr}Reshuffle{/tr}</a>
 								</div>
 								<div class="score" style="display:none">
 									<div class="total">Your Total:<span class="value floatright">{* user's score *}</span></div>
@@ -114,9 +114,9 @@
 	{* footer always visible *}
 	<div class="footer clear">
 		<p>
-			<span class="floatright">Copyright &copy; 2009 Citizens Union Foundation</span>
 			{tr}<strong>Learn More</strong> about New York City's electricity needs and policy options at <a href="http://www.gothamgazette.com">www.gothamgazette.com</a>{/tr}
 		</p>
+		<span class="copyright">Copyright &copy; 2009 Citizens Union Foundation</span>
 	</div> <!-- end .footer -->
 	</div> <!-- end .bgcontainer -->
 </div> <!-- end .display -->
