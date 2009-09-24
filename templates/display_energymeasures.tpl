@@ -19,9 +19,7 @@
 		</div>
 		<h3>Type: {tr}{$gContent->mInfo.type}{/tr}</h3>
 		<h3>MwH: {tr}{$gContent->mInfo.mwh|number_format}{/tr}</h3>
-		<img class="icon" src="{$gContent->mInfo.thumbnail_urls.small}" />
-		<img class="icon" src="{$gContent->mInfo.thumbnail_urls.avatar}" />
-		<img class="icon" src="{$gContent->mInfo.thumbnail_urls.icon}" />
+		<img class="icon" src="{$gContent->mInfo.thumbnail_urls.large}" />
 	</div><!-- end .header -->
 
 	<div class="body">
