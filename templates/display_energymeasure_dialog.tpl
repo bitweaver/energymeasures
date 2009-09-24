@@ -1,7 +1,7 @@
 <h1 class="highlight">It's a match!</h1>
 <div class="dialog">
 	<h1>
-		<img class="icon" src="{$gContent->mInfo.thumbnail_urls.icon}" />&nbsp;
+		<img class="icon" src="{$gContent->mInfo.thumbnail_urls.small}" />&nbsp;
 		{$gContent->mInfo.title|escape}
 	</h1>
 	<h2>{tr}You'll {if $gContent->mInfo.type eq 'Conservation'}conserve{else}generate{/if} {$gContent->mInfo.mwh|number_format} megawatt hours per year.{/tr}</h2>

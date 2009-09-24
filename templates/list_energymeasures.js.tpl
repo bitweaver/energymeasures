@@ -4,7 +4,8 @@ EnergyMeasures = [
 	content_id: {$item.content_id},
 	energymeasure_id: {$item.energymeasure_id},
 	title: "{$item.title|escape}",	
-	thumbnail_urls: {ldelim}small:"{$item.thumbnail_urls.small}",
+	thumbnail_urls: {ldelim}icon:"{$item.thumbnail_urls.icon}",
+							small:"{$item.thumbnail_urls.small}",
 							medium:"{$item.thumbnail_urls.medium}"{rdelim},
 	mwh: {$item.mwh}
 {rdelim}{if !$smarty.foreach.energymeasures.last},{/if}

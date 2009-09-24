@@ -74,13 +74,13 @@
 #matchesdialog h5 {color:#fff !important; text-transform: none; font-family:Arial, Helvetica, sans-serif;}
 
 #matchesdialog .body,
-#matchesdialog h3 {margin:10px 0}
-#matchesdialog h1.highlight {color:#ffff99}
+#matchesdialog h3 {margin:10px 0 !important}
+#matchesdialog h1.highlight {color:#ffff99 !important}
 
 .hidden			{visibility:hidden}
 
 .switch td		{text-align:left; font-size:1.1em}
-.switch td.icon		{width:40px; padding:4px;}
+.switch td.icon		{width:30px; padding:4px;}
 .switch td.value	{text-align:right; color:#ffff99}
 
 .play .header h2	{font-family:"Arial Rounded MT Bold", Arial, Helvetica, sans-serif; font-weight:normal; color:#4E84C4 !important; text-transform:uppercase; margin-bottom:10px;}
@@ -128,7 +128,7 @@ a.suggest {cursor:pointer; color:#4E84C4;}
 .selectedcard	{background: url('http://www.tekimaki.com/clients/bw/energymeasures/images/card_clear.gif') no-repeat top left;}
 
 #matchesdialog {
-	width:454px; 
+	width:530px; 
 	margin:0 auto; 
 	padding:10px; 
 	position:absolute; 
