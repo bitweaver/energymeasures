@@ -157,6 +157,8 @@
 						el.unbind( 'click' );
 						el.css( 'cursor','default' );
 						self.flipCard( el ); 
+						// el.css( {backgroundImage:""} );
+						el.toggleClass( 'selectedcard' );
 					});
 				matchCardId = null;
 			},
@@ -293,6 +295,7 @@
 				$('.options').show();
 				$('#savescoredialog').hide();
 				$('#thankyoudialog').hide();
+				$('#gamecontainer').show();
 
 				// clear the card grid
 				cardGrid.empty();

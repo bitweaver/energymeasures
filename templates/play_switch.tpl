@@ -50,64 +50,66 @@
 				{* suggestion box overlaps game *}
 				<div id="thankyoudialog" style="display:none">{* thankyou from saving score lands here *}</div>
 				<div id="suggestdialog" style="display:none">{* dialog is ajaxed into place, see suggestion:edit_suggestion.tpl *}</div>
+				<div id="gamecontainer">
 
-				<div class="instructions">
-					{$game.instructions}
-				</div>
-
-				<div id="game">
-					{* matchesdialog popup overlaps gameboard and scoreboard *}
-					<div id="matchesdialog" style="display:none">
-						{* dialog is ajaxed into place, see display_energymeasure_dialog.tpl *}
+					<div class="instructions">
+						{$game.instructions}
 					</div>
 
-					<div class="lcol floatleft">
-						<div id="gameboard"></div>
-
-						<div class="options">
-							<p><strong>{tr}Suggest A Measure{/tr}</strong> {tr}Do you have an electric idea that should be part of the game? <a class="suggest">Send us your ideas!</a>{/tr}</p>
-							<p><strong>{tr}Help!{/tr}</strong> {tr}Get more detailed play instructions{/tr}</p>
+					<div id="game">
+						{* matchesdialog popup overlaps gameboard and scoreboard *}
+						<div id="matchesdialog" style="display:none">
+							{* dialog is ajaxed into place, see display_energymeasure_dialog.tpl *}
 						</div>
 
-						<div class="postgame actions" style="display:none">
-							<a class="btn savescore">Save Score</a>
-							<a class="btn playagain">Play Again</a>
-						</div>
-					</div><!--  end .lcol -->
+						<div class="lcol floatleft">
+							<div id="gameboard"></div>
 
-					<div class="rcol">
-						<div id="savescoredialog" style="display:none">{* dialog is ajaxed into place, see edit_switch_score.tpl *}</div>
+							<div class="options">
+								<p><strong>{tr}Suggest A Measure{/tr}</strong> {tr}Do you have an electric idea that should be part of the game? <a class="suggest">Send us your ideas!</a>{/tr}</p>
+								<p><strong>{tr}Help!{/tr}</strong> {tr}Get more detailed play instructions{/tr}</p>
+							</div>
 
-						<div class="description">{$game.description}</div>
+							<div class="postgame actions" style="display:none">
+								<a class="btn savescore">Save Score</a>
+								<a class="btn playagain">Play Again</a>
+							</div>
+						</div><!--  end .lcol -->
 
-						<div id="scoreboard" style="display:none">
-							<ul class="tabbar">
-								<li class="selectedtab"><a>Accepted</a></li>
-								<li class="rejectedtab"><a>Rejected</a></li>
-							</ul>
-							<div class="selected">
-								<table>
-									<tbody>
-									</tbody>
-								</table>
+						<div class="rcol">
+							<div id="savescoredialog" style="display:none">{* dialog is ajaxed into place, see edit_switch_score.tpl *}</div>
+
+							<div class="description">{$game.description}</div>
+
+							<div id="scoreboard" style="display:none">
+								<ul class="tabbar">
+									<li class="selectedtab"><a>Accepted</a></li>
+									<li class="rejectedtab"><a>Rejected</a></li>
+								</ul>
+								<div class="selected">
+									<table>
+										<tbody>
+										</tbody>
+									</table>
+								</div>
+								<div class="rejected" style="display:none">
+									<table>
+										<tbody>
+										</tbody>
+									</table>
+								</div>
+								<div class="actions">
+									<a class="btn endgame"><img src="{$smarty.const.ENERGYMEASURES_PKG_URL}images/switch_icon.png">Flip The Switch</a>
+									<a class="btn playagain">Reshuffle</a>
+								</div>
+								<div class="score" style="display:none">
+									<div class="total">Your Total:<span class="value floatright">{* user's score *}</span></div>
+									<div class="goal">NYC 2030 Goal:<span class="value floatright">22,000,000</span></div>
+								</div>
 							</div>
-							<div class="rejected" style="display:none">
-								<table>
-									<tbody>
-									</tbody>
-								</table>
-							</div>
-							<div class="actions">
-								<a class="btn endgame">Flip The Switch</a>
-								<a class="btn playagain">Reshuffle</a>
-							</div>
-							<div class="score" style="display:none">
-								<div class="total">Your Total:<span class="value floatright">{* user's score *}</span></div>
-								<div class="goal">NYC 2030 Goal:<span class="value floatright">22,000,000</span></div>
-							</div>
-						</div>
-					</div><!--  end .rcol -->
-				</div><!-- end #game -->
+						</div><!--  end .rcol -->
+					</div><!-- end #game -->
+				</div><!-- end #gamecontainer -->
 			</div> <!-- end .content -->
 		</div> <!-- end .body -->
 	</div><!-- end .play -->
@@ -144,7 +146,13 @@
 			Suggestion.onStoreSuccess = function(){ldelim}
 				/* bind the play btn */
 				$(conf.dialogbox).find('.playbtn').click( Switch.startOver );
-			{rdelim}
+			{rdelim};
+			Suggestion.onEditSuggestion = function(){ldelim}
+				$('#gamecontainer').hide();
+			{rdelim};
+			Suggestion.onCancelEditSuggestion = function(){ldelim}
+				$('#gamecontainer').show();
+			{rdelim};
 		{/if}
 
 	{rdelim});

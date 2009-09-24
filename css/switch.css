@@ -1,9 +1,14 @@
 /*
+ *
+ * #matchesdialog h1 {color:
+ * pale yellow #ffff99
  * light blue #D4EFFC
+ * baby blue #83B4E1
  * medium blue #4E84C4
+ * medium violet #201f59
  */
 /* structure */
-.switch				{padding:0 20px 20px 20px !important; background:#13143B !important; color:#fff !important}
+.switch				{padding:0 10px 10px 10px !important; background:#13143B !important; color:#fff !important}
 .preload			{margin:150px 0;}
 .preload .header,
 .preload img.logo	{margin-bottom:30px;}
@@ -14,10 +19,10 @@
 
 .switch .bgcontainer	{background:url('http://www.tekimaki.com/clients/bw/energymeasures/images/switch_bg.gif') repeat-x left top; padding:20px}
 .play img.logo		{margin-bottom:12px;}
-.play .summary		{margin:29px 0 0 10px; width:225px; padding:12px 0; font-size:1.17em; border-style:dotted none; border-width:2px; border-color:#4E84C4;}
+.play .summary		{margin:29px 0 0 10px; width:225px; padding:12px 0; font-size:1.17em; border-style:dotted none; border-width:2px; border-color:#4E84C4; color:#D4EFFC}
 .play .edit .lcol,
 .play .lcol			{width:344px; padding:0; overflow:hidden; margin-top:1px}
-.play .edit .rcol	{width:310px; margin-left:345px;}
+.play .edit .rcol	{width:310px; margin-left:345px; border-top:none;}
 .play .rcol			{margin-left:345px; border-top:1px solid #13133B;} /* border hack to trip top margin respect in children */
 .play .body			{margin:0 !important; padding-top:12px !important}
 .play .content .body	{padding:0 !important}
@@ -26,20 +31,20 @@
 .switch .content	{position:relative;}
 
 #thankyoudialog,
-#suggestdialog		{position:absolute; top:0; left:0; z-index:20; background:#000; width:100%;} 
+#suggestdialog		{/*position:absolute; top:0; left:0; z-index:20;*/ width:100%;} 
 
 #thankyoudialog		{width:auto; padding:82px}
 #thankyoudialog p	{margin:0 0 22px 0}
 #thankyoudialog .score .center	{text-align:center; padding:12px 0; margin:38px 0}
 
-#gameboard			{background:url('http://www.tekimaki.com/clients/bw/energymeasures/images/gameboard_bg.png') no-repeat left top;}
+#gameboard			{background:url('http://www.tekimaki.com/clients/bw/energymeasures/images/gameboard_bg.jpg') no-repeat left top; border:dotted 2px #4E84C4; padding:0; margin-right:10px;}
 #gameboard,
 #savescoredialog,
 .description		{margin-top:14px;}
 
 #scoreboard .selected,
 #scoreboard .rejected			{height:334px; overflow:auto;}
-.total				{font-size:1.4em; color:white; background:#000; padding:6px;}
+.total				{font-size:1.4em; color:white; padding:6px;}
 .goal				{font-size:1.2em; background:#bbb; padding:4px;}
 
 #scoreboard .actions,
@@ -63,7 +68,9 @@
 #matchesdialog h2,
 #matchesdialog h3,
 #matchesdialog h4,
-#matchesdialog h5 {color:#fff !important; text-transform: none;}
+#matchesdialog h5 {color:#fff !important; text-transform: none; font-family:Arial, Helvetica, sans-serif;}
+
+#matchesdialog h1 {color:#ffff99}
 
 .hidden			{visibility:hidden}
 
@@ -76,6 +83,8 @@
 
 .switch .options strong,
 .switch .footer strong {text-transform:uppercase; color:#4E84C4}
+
+.switch .formhelp	{color:#D4EFFC}
 
 
 
@@ -94,19 +103,35 @@ ul.tabbar li.active a	{
 	background:url('http://www.tekimaki.com/clients/bw/themes/styles/aqua2/images/tabedge.gif') no-repeat right top;
 }
 
-.actions	{padding:10px; text-align:center;}
+.actions	{padding:10px 0; text-align:center;}
 .switch .submit input,		
-.btn	{cursor:pointer; color:white; background:#000; padding:6px 10px; font-size:1.2em; margin-right:20px; text-transform: uppercase; border:none}
+.btn	{cursor:pointer; color:white; background:#83B4E1; padding:6px 10px; font-size:1.2em; margin-right:10px; text-transform: uppercase; border:none; color:#13143B; font-weight:bold;}
 a.suggest {cursor:pointer; color:#4E84C4;}
+
+.endgame {text-transform:none;}
 
 
 
 
 /* game */
-.card			{cursor:pointer; display:block; float:left; border:1px solid #666; overflow:hidden}
+.card			{cursor:pointer; display:block; float:left; overflow:hidden; background: url('http://www.tekimaki.com/clients/bw/energymeasures/images/card_down.gif') no-repeat left top; }
 .upcard			{}
+.selectedcard	{background:#4E84C4}
 
-#matchesdialog {width:554px; background:#000; color:#fff; padding:20px; position:absolute; top:60px; left:0; right:0; margin:0 auto; text-align:center; z-index:10;}
+#matchesdialog {
+	width:554px; 
+	margin:0 auto; 
+	padding:20px; 
+	position:absolute; 
+	top:60px; left:0; right:0; 
+	z-index:10;
+	color:#fff; 
+	text-align:center; 
+	border:solid 1px #4E84C4;
+
+	background: rgb(36,36,93); 
+	background: rgba(36,36,93, 0.9);
+}
 #matchesdialog .btn	{border:1px solid #fff}
 
 
@@ -120,10 +145,10 @@ a.suggest {cursor:pointer; color:#4E84C4;}
 .switch fieldset			{border:none; margin:0; padding:0}
 #content .switch .edit		{padding:0} 
 
-.switch #edit_suggestion textarea			{width:100%}
+.switch #edit_suggestion textarea			{width:94%}
 .switch #edit_suggestion .lcol textarea		{width:94%}
 .switch	#edit_suggestion .lcol input		{width:94%}
-.switch #edit_suggestion .submit			{margin-top:32px}
+.switch #edit_suggestion .submit			{margin-top:22px}
 
 .switch	.fieldlabel,
 .switch input,
