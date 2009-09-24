@@ -17,7 +17,7 @@
 .preload p			{margin-top:0;}
 .preload .summary	{padding:10px 0; font-size:1.6em; border-style:dotted none; border-width:2px; border-color:#4E84C4;}
 
-.switch .bgcontainer	{background:url('http://www.tekimaki.com/clients/bw/energymeasures/images/switch_bg.gif') repeat-x left top; padding:20px}
+.switch .bgcontainer	{background:url('http://www.tekimaki.com/clients/bw/energymeasures/images/switch_bg.gif') repeat-x left top; padding:10px 20px}
 .play img.logo		{margin-bottom:12px;}
 .play .summary		{margin:29px 0 0 10px; width:225px; padding:12px 0; font-size:1.17em; border-style:dotted none; border-width:2px; border-color:#4E84C4; color:#D4EFFC}
 .play .edit .lcol,
@@ -47,6 +47,8 @@
 .total				{font-size:1.4em; color:white; padding:6px;}
 .goal				{font-size:1.2em; background:#bbb; padding:4px;}
 
+#scoreboard .actions a {color:#4E84C4}
+#scoreboard .actions img {border:none}
 #scoreboard .actions,
 .postgame			{margin:12px 0;}
 
@@ -90,7 +92,7 @@
 
 
 /* ui */
-ul.tabbar		{list-style:none; border-bottom:2px solid #4E84C4; font-weight:bolder; margin:0; padding:0 0 13px 20px;}
+ul.tabbar		{list-style:none; border-bottom:3px solid #4E84C4; font-weight:bolder; margin:0; padding:0 0 13px 20px;}
 ul.tabbar li	{float:left;}
 ul.tabbar li a	{float:left; display:block; cursor:pointer}
 
@@ -116,7 +118,7 @@ a.suggest {cursor:pointer; color:#4E84C4;}
 /* game */
 .card			{cursor:pointer; display:block; float:left; overflow:hidden; background: url('http://www.tekimaki.com/clients/bw/energymeasures/images/card_down.gif') no-repeat left top; }
 .upcard			{}
-.selectedcard	{background:#4E84C4}
+.selectedcard	{background: url('http://www.tekimaki.com/clients/bw/energymeasures/images/card_clear.gif') no-repeat top left;}
 
 #matchesdialog {
 	width:554px; 
@@ -156,3 +158,4 @@ a.suggest {cursor:pointer; color:#4E84C4;}
 
 .switch	.fieldlabel	{margin:4px 0;}
 
+.switch .footer .floatright {margin-left:20px}

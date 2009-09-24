@@ -67,7 +67,6 @@
 
 							<div class="options">
 								<p><strong>{tr}Suggest A Measure{/tr}</strong> {tr}Do you have an electric idea that should be part of the game? <a class="suggest">Send us your ideas!</a>{/tr}</p>
-								<p><strong>{tr}Help!{/tr}</strong> {tr}Get more detailed play instructions{/tr}</p>
 							</div>
 
 							<div class="postgame actions" style="display:none">
@@ -99,8 +98,8 @@
 									</table>
 								</div>
 								<div class="actions">
-									<a class="btn endgame"><img src="{$smarty.const.ENERGYMEASURES_PKG_URL}images/switch_icon.png">Flip The Switch</a>
-									<a class="btn playagain">Reshuffle</a>
+									<a class="endgame"><img src="{$smarty.const.ENERGYMEASURES_PKG_URL}images/switch_icon.png">Flip The Switch</a>
+									<a class="playagain">Reshuffle</a>
 								</div>
 								<div class="score" style="display:none">
 									<div class="total">Your Total:<span class="value floatright">{* user's score *}</span></div>
