@@ -66,9 +66,8 @@
 							<div id="gameboard"></div>
 
 							<div class="options">
-								<p><strong>{tr}Suggest A Measure{/tr}</strong> {tr}Do you have an electric idea that should be part of the game? <a class="suggest">Send us your ideas!</a>{/tr}</p>
+								<p><strong>{tr}Suggest A Measure:{/tr}</strong> {tr}Do you have an electric idea that should be part of the game? <a class="suggest">Send us your ideas!</a>{/tr}</p>
 							</div>
-
 							<div class="postgame actions" style="display:none">
 								<a class="btn savescore">Save Score</a>
 								<a class="btn playagain">Play Again</a>
