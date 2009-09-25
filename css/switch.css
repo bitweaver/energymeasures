@@ -115,9 +115,9 @@ ul.tabbar li.active a	{
 .btn	{cursor:pointer; color:white; background:#83B4E1; padding:6px 10px; font-size:1.2em; margin-right:10px; text-transform: uppercase; border:none; color:#13143B; font-weight:bold;}
 a.suggest {cursor:pointer; color:#4E84C4;}
 
-.endgame 	{display:block; position:absolute; top:0; left:55px; width:100px; text-transform:none; cursor:pointer; font-size:1.2em;}
+.endgame 	{display:block; position:absolute; top:0; left:45px; width:100px; text-transform:none; cursor:pointer; font-size:1.2em;}
 .endgame span	{position:absolute; margin-top:10px; left:34px;}
-#scoreboard .playagain	{display:block; position:absolute; top:18px; right:55px; width:100px; text-transform:uppercase; cursor:pointer; font-size:1.2em;} 
+#scoreboard .playagain	{display:block; position:absolute; top:18px; right:45px; width:100px; text-transform:uppercase; cursor:pointer; font-size:1.2em;} 
 
 
 
@@ -143,6 +143,7 @@ a.suggest {cursor:pointer; color:#4E84C4;}
 }
 #matchesdialog .btn	{border:1px solid #fff}
 
+#gameboard h1.goalpercent {margin:30px 0 0 60px; width:160px; font-family:Arial, Helvetical, sans-serif; color:#ffff99;}
 
 
 

@@ -138,8 +138,11 @@
 			onEndGame:function(){ldelim}
 				var goal = {$gBitSystem->getConfig('energymeasures_switch_goal', 20000000)};
 				var score = this.getScore();
-				var percent = Math.round( score/goal * 10 ) * 10;
-				$('#gameboard').empty().css( {ldelim}backgroundImage: "url('{$smarty.const.BIT_ROOT_URL}energymeasures/images/"+percent+".jpg')" {rdelim} );
+				var pct = Math.round( score/goal * 10 ) * 10;
+				var str = pct<10?"{tr}You've met less than 10% of NYC's energy needs{/tr}":{tr}pct+"%<br />Powered!"{/tr};
+				$('#gameboard').empty()
+				.append( '<h1 class="goalpercent">'+str+'</h1>' )
+				.css( {ldelim}backgroundImage: "url('{$smarty.const.BIT_ROOT_URL}energymeasures/images/"+pct+".jpg')" {rdelim} );
 			{rdelim},
 			onStartOver:function(){ldelim}
 				$('#gameboard').css( {ldelim}backgroundImage: "url('{$smarty.const.BIT_ROOT_URL}energymeasures/images/gameboard_bg.jpg')" {rdelim} );
