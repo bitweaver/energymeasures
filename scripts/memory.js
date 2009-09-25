@@ -243,7 +243,16 @@
 
 			storeScore: function($f){
 				var path = BitSystem.urls.energymeasures+'edit_score.php?';
-				path += $f.serialize() + "&game=switch&save_switch_score=y&score="+self.getScore()+"&selected="+selected.toString()+"&rejected="+rejected.toString();
+				/* mess because energymeasure ids expected */
+				var selected_eids = [];
+				var rejected_eids = [];
+				for( var n = 0; n < selected.length; n++ ){
+					selected_eids.push(cardsRef[ selected[n] ].energymeasure_id);
+				}
+				for( n = 0; n < rejected.length; n++ ){
+					rejected_eids.push(cardsRef[ rejected[n] ].energymeasure_id);
+				}
+				path += $f.serialize() + "&game=switch&save_switch_score=y&score="+self.getScore()+"&selected="+selected_eids.toString()+"&rejected="+rejected_eids.toString();
 				var fn = function(rslt, textStatus){
 					// there could be an error on the page
 					var el = $('#savescoredialog');
@@ -253,6 +262,7 @@
 						el.find( 'input[name="cancel_save_score"]' ).click( self.cancelEditScore );
 					}else{
 						el.hide();
+						$('#gamecontainer').hide();
 						$('#thankyoudialog').html(rslt).show().find('.playagain').click( self.startOver ); 
 					}
 				}

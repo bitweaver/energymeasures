@@ -32,7 +32,7 @@
 #thankyoudialog,
 #suggestdialog		{/*position:absolute; top:0; left:0; z-index:20;*/ width:100%;} 
 
-#thankyoudialog		{width:auto; padding:82px}
+#thankyoudialog		{width:auto; padding:60px 60px 100px}
 #thankyoudialog p	{margin:0 0 22px 0}
 #thankyoudialog .score .center	{text-align:center; padding:12px 0; margin:38px 0}
 
