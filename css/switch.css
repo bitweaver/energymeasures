@@ -7,7 +7,7 @@
  * medium violet #201f59
  */
 /* structure */
-.switch				{padding:0 10px 10px 10px !important; background:#13143B !important; color:#fff !important}
+.switch				{padding:0 10px 10px 10px !important; background:#13143B !important; color:#fff !important; min-width:679px} /*700 less padding in switch.css*/
 .preload			{margin:150px 0;}
 .preload .header,
 .preload img.logo	{margin-bottom:30px;}
