@@ -102,7 +102,7 @@
 								</div>
 								<div class="score" style="display:none">
 									<div class="total">Your Total:<span class="value floatright">{* user's score *}</span></div>
-									<div class="goal">NYC 2030 Goal:<span class="value floatright">{$gBitSystem->getConfig('energymeasures_switch_goal', 20000000)}</span></div>
+									<div class="goal">NYC 2030 Goal:<span class="value floatright">{$gBitSystem->getConfig('energymeasures_switch_goal', 20000000)|number_format}</span></div>
 								</div>
 							</div>
 						</div><!--  end .rcol -->
