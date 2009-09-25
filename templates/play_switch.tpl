@@ -155,7 +155,7 @@
 			Suggestion = $('.suggest').suggestion( {ldelim}api:true{rdelim} );
 			Suggestion.onStoreSuccess = function(){ldelim}
 				/* bind the play btn */
-				$(conf.dialogbox).find('.playbtn').click( Switch.startOver );
+				$(conf.dialogbox).find('.playagain').click( Switch.startOver );
 			{rdelim};
 			Suggestion.onEditSuggestion = function(){ldelim}
 				$('#gamecontainer').hide();

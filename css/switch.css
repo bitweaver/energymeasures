@@ -119,6 +119,8 @@ a.suggest {cursor:pointer; color:#4E84C4;}
 .endgame span	{position:absolute; margin-top:10px; left:34px;}
 #scoreboard .playagain	{display:block; position:absolute; top:18px; right:45px; width:100px; text-transform:uppercase; cursor:pointer; font-size:1.2em;} 
 
+#suggestthankyou { padding: 60px 60px 150px }
+
 
 
 
