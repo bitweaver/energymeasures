@@ -45,8 +45,8 @@
 #scoreboard .rejected			{height:317px; overflow:auto;}
 #scoreboard .selected			{border-top:6px solid #4E84C4; border-bottom:6px solid #4E84C4}
 #scoreboard .rejected			{border-top:6px solid #CCC; border-bottom:6px solid #CCC}
-.total				{font-size:1.4em; background:#000; color:#ffff99; padding:6px;}
-.goal				{font-size:1.2em; background:#ffff99; color:#000; padding:4px;}
+.switch .total				{font-size:1.4em; background:#000; color:#ffff99; padding:6px;}
+.switch .goal				{font-size:1.2em; background:#ffff99; color:#000; padding:4px;}
 
 #scoreboard .actions a {color:#4E84C4}
 #scoreboard .actions img {border:none}
