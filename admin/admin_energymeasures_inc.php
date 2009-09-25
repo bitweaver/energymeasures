@@ -1,5 +1,5 @@
 <?php
-// $Header: /cvsroot/bitweaver/_bit_energymeasures/admin/admin_energymeasures_inc.php,v 1.1 2009/09/15 15:01:13 wjames5 Exp $
+// $Header: /cvsroot/bitweaver/_bit_energymeasures/admin/admin_energymeasures_inc.php,v 1.2 2009/09/25 01:05:57 wjames5 Exp $
 
 require_once( ENERGYMEASURES_PKG_PATH.'BitEnergyMeasures.php' );
 
@@ -29,8 +29,6 @@ if( !empty( $_REQUEST['energymeasures_settings'] )) {
 	foreach( $energymeasuresToggles as $item => $data ) {
 		simple_set_toggle( $item, ENERGYMEASURES_PKG_NAME );
 	}
-
-	
 }
 
 // Process javascript re-cache
@@ -54,6 +52,7 @@ if( !empty( $_REQUEST['game_settings'] ) ){
 	if( $gameSystem->registerGameType( $gameData ) ){
 		$game = $gameData;
 	}
+	$gBitSystem->storeConfig("energymeasures_switch_goal", $_REQUEST["energymeasures_switch_goal"], ENERGYMEASURES_PKG_NAME );
 }
 
 $gBitSmarty->assign_by_ref( 'game', $game );

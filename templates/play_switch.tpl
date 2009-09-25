@@ -102,7 +102,7 @@
 								</div>
 								<div class="score" style="display:none">
 									<div class="total">Your Total:<span class="value floatright">{* user's score *}</span></div>
-									<div class="goal">NYC 2030 Goal:<span class="value floatright">22,000,000</span></div>
+									<div class="goal">NYC 2030 Goal:<span class="value floatright">{$gBitSystem->getConfig('energymeasures_switch_goal', 20000000)}</span></div>
 								</div>
 							</div>
 						</div><!--  end .rcol -->
@@ -134,7 +134,16 @@
 			cardValueKey: "mwh",
 			matchesDialogId: "matchesdialog",
 			scoreBoardId: "scoreboard",
-			api:true
+			api:true,
+			onEndGame:function(){ldelim}
+				var goal = {$gBitSystem->getConfig('energymeasures_switch_goal', 20000000)};
+				var score = this.getScore();
+				var percent = Math.round( score/goal * 10 ) * 10;
+				$('#gameboard').empty().css( {ldelim}backgroundImage: "url('{$smarty.const.BIT_ROOT_URL}energymeasures/images/"+percent+".jpg')" {rdelim} );
+			{rdelim},
+			onStartOver:function(){ldelim}
+				$('#gameboard').css( {ldelim}backgroundImage: "url('{$smarty.const.BIT_ROOT_URL}energymeasures/images/gameboard_bg.jpg')" {rdelim} );
+			{rdelim}
 		{rdelim};
 
 		Switch = $('#gameboard').memory( SwitchOpts ); 

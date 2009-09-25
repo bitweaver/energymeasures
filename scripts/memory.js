@@ -42,6 +42,22 @@
 			} while (--count > 0);
 		}
 
+		// call back binding lifted from jQuery TOOLS http://flowplayer.org/tools/
+        // generic binding function
+        function bind(name, fn) {
+            $(self).bind(name, function(e, args)  {
+                if (fn && fn.call(this) === false && args) {
+                    args.proceed = false;
+                }
+            });
+            return self;
+        }
+
+        // bind all callbacks from configuration
+        $.each(conf, function(name, fn) {
+            if ($.isFunction(fn)) { bind(name, fn); }
+        });
+
         // public
         $.extend(self, {
 			// card click action handler
@@ -256,7 +272,7 @@
 					// calc the score and display
 					self.calcScore();
 					el.find('.score').show();
-					el.find('.score').find('.value').html( self.number_format(self.getScore()) );
+					el.find('.total').find('.value').html( self.number_format(self.getScore()) );
 					// disable all remaining cards
 					$('.card').unbind( 'click' ).css( 'cursor','default' );
 					// this is a bit of a mess due to runaway layout requests
@@ -266,6 +282,8 @@
 					$('.options').hide();
 					// hide scoreboard actions
 					el.find('.actions').hide();
+					// plugin callback
+					$(self).trigger( "onEndGame" );
 				}else{
 					alert( 'You must select at least one match, please try again.' );
 				}
@@ -288,7 +306,7 @@
 					el.show();
 					self.showSelected();
 				}
-				el.find('.score').find('.value').empty();
+				el.find('.total').find('.value').empty();
 				el.find('.actions').show();
 				$('.postgame').hide();
 				$('.score').hide();
@@ -308,6 +326,9 @@
 				cardset.sort( random );
 				// deal the cards	
 				doWhile( cardset, self.dealCard );
+
+				// plugin callback
+				$(self).trigger( "onStartOver" );
 			},
 
 			// this should move to an external utility some day 
@@ -351,7 +372,11 @@
 					s += dec+new Array(prec).join(0)+'0';
 				}
 				return s;
-			}
+			},
+
+			onEndGame: function(fn) {
+                return bind("onEndGame", fn);
+            }
         });
         // end extend
 
@@ -405,6 +430,10 @@
 			// ui and layout identifiers
 			matchesDialogId:'matchesdialog',
 			scoreBoardId:'scoreboard',
+
+			// callback handlers
+			onEndGame:null,
+			onStartOver:null,
 
 			// external object access
 			api:true

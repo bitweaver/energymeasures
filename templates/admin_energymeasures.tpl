@@ -4,6 +4,12 @@
 			{form}
 				{legend legend="Display Values"}
 					{include file="bitpackage:games/admin_game_settings_inc.tpl" game=$game}
+					<div class="row">
+						{formlabel label="Switch Game NYC 2030 Goal Value" for="energymeasures_switch_goal"}
+						{forminput}
+							<input type="text" size="50" name="energymeasures_switch_goal" value="{$gBitSystem->getConfig('energymeasures_switch_goal', 20000000)}" />
+						{/forminput}
+					</div>
 					<input type="hidden" name="page" value="{$page}" />
 					<div class="row submit">
 						<input type="submit" name="game_settings" value="{tr}Save Settings{/tr}" />
