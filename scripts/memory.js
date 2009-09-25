@@ -92,7 +92,7 @@
 					}
 					// display the clicked card
 					var cardData = cardsRef[ $el.data('cardId') ];
-					$el.css( {backgroundImage: "url( '"+cardData.thumbnail_urls.small +"' )"} );
+					$el.css( {backgroundImage: "url( '"+cardData.thumbnail_urls.medium +"' )"} );
 					$el.addClass( 'upcard' );
 				}
 			},
@@ -143,7 +143,7 @@
 
 			makeMatchRowHtml: function( cardId ){
 				var data = cardsRef[cardId];
-				return $('<tr class="matchrow"><td class="icon"><img width="30px" height="30px" src="'+data.thumbnail_urls.icon+'" /></td><td>'+data.title+'</td><td class="value hidden">'+self.number_format(data[conf.cardValueKey])+'</td></tr>');
+				return $('<tr class="matchrow"><td class="icon"><img width="30px" height="30px" src="'+data.thumbnail_urls.medium+'" /></td><td>'+data.title+'</td><td class="value hidden">'+self.number_format(data[conf.cardValueKey])+'</td></tr>');
 			},
 
 			showSelected: function(){
