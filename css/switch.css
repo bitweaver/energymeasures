@@ -7,7 +7,7 @@
  * medium violet #201f59
  */
 /* structure */
-.switch				{padding:0 10px 10px 10px !important; background:#13143B !important; color:#fff !important; min-width:679px} /*700 less padding in switch.css*/
+.switch				{padding:0 10px 10px 10px !important; background:#13143B !important; color:#fff !important; min-width:680px} /*700 less padding in switch.css*/
 .preload			{margin:150px 0;}
 .preload .header,
 .preload img.logo	{margin-bottom:30px;}
@@ -45,8 +45,9 @@
 #scoreboard .rejected			{height:317px; overflow:auto;}
 #scoreboard .selected			{border-top:6px solid #4E84C4; border-bottom:6px solid #4E84C4}
 #scoreboard .rejected			{border-top:6px solid #CCC; border-bottom:6px solid #CCC}
-.switch .total				{font-size:1.4em; background:#000; color:#ffff99; padding:6px;}
-.switch .goal				{font-size:1.2em; background:#ffff99; color:#000; padding:4px;}
+.switch .total				{font-size:1.4em; background:#000; color:#ffff99; padding:6px; position:relative;}
+.switch .goal				{font-size:1.2em; background:#ffff99; color:#000; padding:4px; position:relative;}
+.score .value						{position:absolute; top:6px; right:5px;}
 
 #scoreboard .actions a {color:#4E84C4}
 #scoreboard .actions img {border:none}
@@ -61,11 +62,19 @@
 /* common */
 .switch a:link,
 .switch a:visited 	{color:#4E84C4}
+
 .switch h1,
 .switch h2,
 .switch h3,
 .switch h4,
 .switch h5 {color:#D4EFFC !important; font-family:"Arial Rounded MT Bold", Arial, Helvetica, sans-serif; font-weight:normal;}
+
+.switch h1 {font-size:1.5em}
+.switch h2 {font-size:1.4em}
+.switch h3 {font-size:1.2em}
+.switch h4 {font-size:1.1em}
+.switch h5 {font-size:1em}
+
 
 #matchesdialog h1,
 #matchesdialog h2,

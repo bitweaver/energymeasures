@@ -312,10 +312,13 @@
 				// clear the calculated score
 				// and hide various buttons and dialog boxes
 				var el = $('#'+conf.scoreBoardId);
+				/*
 				if( !isInit ){
 					el.show();
 					self.showSelected();
 				}
+				*/
+				el.hide();
 				el.find('.total').find('.value').empty();
 				el.find('.actions').show();
 				$('.postgame').hide();
@@ -324,6 +327,7 @@
 				$('#savescoredialog').hide();
 				$('#thankyoudialog').hide();
 				$('#gamecontainer').show();
+				$('.description').show();
 
 				// clear the card grid
 				cardGrid.empty();

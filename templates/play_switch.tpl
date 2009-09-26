@@ -100,9 +100,9 @@
 									<a class="endgame"><img class="floatleft" src="{$smarty.const.ENERGYMEASURES_PKG_URL}images/switch_icon.png"><span>{tr}FLIP The SWITCH{/tr}</span></a>
 									<a class="playagain">{tr}Reshuffle{/tr}</a>
 								</div>
-								<div class="score" style="display:none">
-									<div class="total">Your Total:<span class="value floatright">{* user's score *}</span></div>
-									<div class="goal">NYC 2030 Goal:<span class="value floatright">{$gBitSystem->getConfig('energymeasures_switch_goal', 20000000)|number_format}</span></div>
+								<div class="score" style="">
+									<div class="total">Your Total: <span class="value">{* user's score *}</span></div>
+									<div class="goal">NYC 2030 Goal: <span class="value">{$gBitSystem->getConfig('energymeasures_switch_goal', 20000000)|number_format}</span></div>
 								</div>
 							</div>
 						</div><!--  end .rcol -->
