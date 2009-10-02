@@ -1,13 +1,20 @@
 <?php
 /**
-* $Header: /cvsroot/bitweaver/_bit_energymeasures/BitEnergyMeasures.php,v 1.2 2009/09/16 20:54:00 wjames5 Exp $
-* $Id: BitEnergyMeasures.php,v 1.2 2009/09/16 20:54:00 wjames5 Exp $
+* $Header: /cvsroot/bitweaver/_bit_energymeasures/BitEnergyMeasures.php,v 1.3 2009/10/02 18:51:04 wjames5 Exp $
+* $Id: BitEnergyMeasures.php,v 1.3 2009/10/02 18:51:04 wjames5 Exp $
 */
 
 /**
-* date created 2009/9/1
+* Copyright (c) 2009 Citizens Union Foundation
+* Funding for the development of this package was provided by the John S. and James L. Knight Foundation.
+* All Rights Reserved. See below for details and a complete list of authors.
+* Licensed under the GNU GENERAL PUBLIC LICENSE. See http://www.gnu.org/copyleft/gpl.html for details 
+*
+* Developed by Tekimaki LLC http://tekimaki.com
+* Date created 2009/9/1
+*
 * @author Will James <will@tekimaki.com>
-* @version $Revision: 1.2 $ $Date: 2009/09/16 20:54:00 $ $Author: wjames5 $
+* @version $Revision: 1.3 $ $Date: 2009/10/02 18:51:04 $ $Author: wjames5 $
 * @class BitEnergyMeasures
 */
 
