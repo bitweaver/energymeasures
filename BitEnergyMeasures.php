@@ -1,7 +1,7 @@
 <?php
 /**
-* $Header: /cvsroot/bitweaver/_bit_energymeasures/BitEnergyMeasures.php,v 1.3 2009/10/02 18:51:04 wjames5 Exp $
-* $Id: BitEnergyMeasures.php,v 1.3 2009/10/02 18:51:04 wjames5 Exp $
+* $Header: /cvsroot/bitweaver/_bit_energymeasures/BitEnergyMeasures.php,v 1.4 2010/04/17 22:46:07 wjames5 Exp $
+* $Id: BitEnergyMeasures.php,v 1.4 2010/04/17 22:46:07 wjames5 Exp $
 */
 
 /**
@@ -14,7 +14,7 @@
 * Date created 2009/9/1
 *
 * @author Will James <will@tekimaki.com>
-* @version $Revision: 1.3 $ $Date: 2009/10/02 18:51:04 $ $Author: wjames5 $
+* @version $Revision: 1.4 $ $Date: 2010/04/17 22:46:07 $ $Author: wjames5 $
 * @class BitEnergyMeasures
 */
 
@@ -56,7 +56,7 @@ class BitEnergyMeasures extends LibertyMime {
 		$this->mContentTypeGuid = BITENERGYMEASURES_CONTENT_TYPE_GUID;
 		$this->registerContentType( BITENERGYMEASURES_CONTENT_TYPE_GUID, array(
 			'content_type_guid'   => BITENERGYMEASURES_CONTENT_TYPE_GUID,
-			'content_description' => 'Energy Measure',
+			'content_name' => 'Energy Measure',
 			'handler_class'       => 'BitEnergyMeasures',
 			'handler_package'     => 'energymeasures',
 			'handler_file'        => 'BitEnergyMeasures.php',
