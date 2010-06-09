@@ -1,6 +1,6 @@
 <?php
 /**
- * @version $Header: /cvsroot/bitweaver/_bit_energymeasures/admin/schema_inc.php,v 1.2 2010/04/17 22:46:07 wjames5 Exp $
+ * @version $Header$
  * @package energymeasures
  */
 $tables = array(

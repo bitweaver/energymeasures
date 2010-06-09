@@ -1,7 +1,7 @@
 <?php
 /**
-* $Header: /cvsroot/bitweaver/_bit_energymeasures/BitEnergyMeasures.php,v 1.4 2010/04/17 22:46:07 wjames5 Exp $
-* $Id: BitEnergyMeasures.php,v 1.4 2010/04/17 22:46:07 wjames5 Exp $
+* $Header$
+* $Id$
 */
 
 /**
@@ -14,7 +14,7 @@
 * Date created 2009/9/1
 *
 * @author Will James <will@tekimaki.com>
-* @version $Revision: 1.4 $ $Date: 2010/04/17 22:46:07 $ $Author: wjames5 $
+* @version $Revision$
 * @class BitEnergyMeasures
 */
 

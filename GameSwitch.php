@@ -1,13 +1,13 @@
 <?php
 /**
-* $Header: /cvsroot/bitweaver/_bit_energymeasures/GameSwitch.php,v 1.2 2009/09/16 20:54:00 wjames5 Exp $
-* $Id: GameSwitch.php,v 1.2 2009/09/16 20:54:00 wjames5 Exp $
+* $Header$
+* $Id$
 */
 
 /**
 * date created 2009/9/1
 * @author Will James <will@tekimaki.com>
-* @version $Revision: 1.2 $ $Date: 2009/09/16 20:54:00 $ $Author: wjames5 $
+* @version $Revision$
 * @class BitEnergyMeasures
 */
 

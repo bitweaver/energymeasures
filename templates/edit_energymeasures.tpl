@@ -1,4 +1,4 @@
-{* $Header: /cvsroot/bitweaver/_bit_energymeasures/templates/edit_energymeasures.tpl,v 1.1 2009/09/15 15:01:13 wjames5 Exp $ *}
+{* $Header$ *}
 {strip}
 <div class="floaticon">{bithelp}</div>
 

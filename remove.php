@@ -1,6 +1,6 @@
 <?php
 /**
- * $Header: /cvsroot/bitweaver/_bit_energymeasures/remove.php,v 1.3 2010/02/08 21:37:30 wjames5 Exp $
+ * $Header$
  */
 
 /**

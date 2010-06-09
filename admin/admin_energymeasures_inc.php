@@ -1,5 +1,5 @@
 <?php
-// $Header: /cvsroot/bitweaver/_bit_energymeasures/admin/admin_energymeasures_inc.php,v 1.2 2009/09/25 01:05:57 wjames5 Exp $
+// $Header$
 
 require_once( ENERGYMEASURES_PKG_PATH.'BitEnergyMeasures.php' );
 
