@@ -31,6 +31,7 @@ foreach( array_keys( $tables ) AS $tableName ) {
 $gBitInstaller->registerPackageInfo( ENERGYMEASURES_PKG_NAME, array(
 	'description' => "EnergyMeasures package to demonstrate how to build a bitweaver package.",
 	'license' => '<a href="http://www.gnu.org/licenses/licenses.html#LGPL">LGPL</a>',
+    'dependencies' => 'games',
 ));
 
 // $indices = array();
@@ -70,4 +71,5 @@ $gBitInstaller->registerPreferences( ENERGYMEASURES_PKG_NAME, array(
 // Requirements
 $gBitInstaller->registerRequirements( ENERGYMEASURES_PKG_NAME, array(
 	'liberty' => array( 'min' => '2.1.4' ),
+    'games' => array( 'min' => '0.0.0' ),
 ));
