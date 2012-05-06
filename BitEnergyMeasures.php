@@ -50,7 +50,7 @@ class BitEnergyMeasures extends LibertyMime {
 	 * @return void
 	 */
 	function BitEnergyMeasures( $pEnergyMeasuresId=NULL, $pContentId=NULL ) {
-		LibertyMime::LibertyMime();
+		parent::__construct();
 		$this->mEnergyMeasuresId = $pEnergyMeasuresId;
 		$this->mContentId = $pContentId;
 		$this->mContentTypeGuid = BITENERGYMEASURES_CONTENT_TYPE_GUID;
