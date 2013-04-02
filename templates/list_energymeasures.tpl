@@ -58,7 +58,7 @@
 
 						<td class="actionicon">
 						{if $gBitUser->hasPermission( 'p_energymeasures_update' )}
-							{smartlink ititle="Edit" ifile="edit.php" ibiticon="icons/accessories-text-editor" energymeasure_id=$energymeasures.energymeasure_id}
+							{smartlink ititle="Edit" ifile="edit.php" booticon="icon-edit" energymeasure_id=$energymeasures.energymeasure_id}
 						{/if}
 						{if $gBitUser->hasPermission( 'p_energymeasures_expunge' )}
 							<input type="checkbox" name="checked[]" title="{$energymeasures.title|escape}" value="{$energymeasures.energymeasure_id}" />
