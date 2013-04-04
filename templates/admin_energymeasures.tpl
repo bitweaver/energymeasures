@@ -12,7 +12,7 @@
 					</div>
 					<input type="hidden" name="page" value="{$page}" />
 					<div class="control-group submit">
-						<input type="submit" name="game_settings" value="{tr}Save Settings{/tr}" />
+						<input type="submit" class="btn" name="game_settings" value="{tr}Save Settings{/tr}" />
 					</div>
 				{/legend}
 			{/form}
@@ -22,7 +22,7 @@
 			{form}
 				{legend legend="Javascript Cache"}
 					<input type="hidden" name="page" value="{$page}" />
-					<input type="submit" name="energymeasures_refresh_js" value="{tr}Refresh Cached Javascript{/tr}" />
+					<input type="submit" class="btn" name="energymeasures_refresh_js" value="{tr}Refresh Cached Javascript{/tr}" />
 					{formhelp note="Published energy measures are cached to a javascript file for game play. You can refresh the cache by click the button above."}
 				{/legend}
 			{/form}
@@ -43,7 +43,7 @@
 					{/foreach}
 				{/legend}
 				<div class="control-group submit">
-					<input type="submit" name="energymeasures_settings" value="{tr}Change preferences{/tr}" />
+					<input type="submit" class="btn" name="energymeasures_settings" value="{tr}Change preferences{/tr}" />
 				</div>
 			{/form}
 		{/jstab}
