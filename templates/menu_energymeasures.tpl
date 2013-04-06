@@ -1,5 +1,6 @@
 {strip}
-	<ul>
+	<a class="dropdown-toggle" data-toggle="dropdown" href="#"> {tr}{$packageMenuTitle}{/tr} <b class="caret"></b></a>
+<ul class="{$packageMenuClass}">
 		{if $gBitUser->hasPermission( 'p_energymeasures_view')}
 			<li><a class="item" href="{$smarty.const.ENERGYMEASURES_PKG_URL}list.php">{tr}List{/tr}</a></li>
 		{/if}

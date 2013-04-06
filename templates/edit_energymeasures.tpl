@@ -6,7 +6,7 @@
 	{if $smarty.request.preview}
 		<h2>Preview {$gContent->mInfo.title|escape}</h2>
 		<div class="preview">
-			{include file="bitpackage:energymeasures/display_energymeasures.tpl" page=`$gContent->mInfo.energymeasure_id`}
+			{include file="bitpackage:energymeasures/display_energymeasures.tpl" page=$gContent->mInfo.energymeasure_id}
 		</div>
 	{/if}
 

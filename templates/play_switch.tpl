@@ -122,7 +122,7 @@
 </div> <!-- end .display -->
 
 <script type="text/javascript">
-	{include_js file=`$smarty.const.UTIL_PKG_PATH`javascript/bootstrap.js}
+	{include_js file="`$smarty.const.UTIL_PKG_PATH`javascript/bootstrap.js"}
 
 	var Switch;
 
