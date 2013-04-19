@@ -55,7 +55,7 @@
 							{/forminput}
 						</div>
 
-						{textarea name="edit"}{$gContent->mInfo.data}{/textarea}
+						{textarea name="edit" edit=$gContent->mInfo.data}
 
 						{include file="bitpackage:liberty/edit_services_inc.tpl" serviceFile="content_edit_mini_tpl"}
 
