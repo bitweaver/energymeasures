@@ -28,7 +28,7 @@
 						<input type="hidden" name="energymeasure_id" value="{$gContent->mInfo.energymeasure_id}" />
 						{formfeedback warning=$errors.store}
 
-						<div class="control-group">
+						<div class="form-group">
 							{formfeedback warning=$errors.title}
 							{formlabel label="Title" for="title"}
 							{forminput}
@@ -36,7 +36,7 @@
 							{/forminput}
 						</div>
 
-						<div class="control-group">
+						<div class="form-group">
 							{formfeedback warning=$errors.type}
 							{formlabel label="Type" for="type"}
 							{forminput}
@@ -47,7 +47,7 @@
 							{/forminput}
 						</div>
 
-						<div class="control-group">
+						<div class="form-group">
 							{formfeedback warning=$errors.mwh}
 							{formlabel label="MwH Value" for="mwh"}
 							{forminput}
@@ -65,7 +65,7 @@
 							{/legend}
 						{/if}
 
-						<div class="control-group submit">
+						<div class="form-group submit">
 							<input type="submit" class="btn btn-default" name="preview" value="{tr}Preview{/tr}" />
 							<input type="submit" class="btn btn-default" name="save_energymeasures" value="{tr}Save{/tr}" />
 						</div>

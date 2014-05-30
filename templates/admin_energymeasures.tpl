@@ -4,14 +4,14 @@
 			{form}
 				{legend legend="Display Values"}
 					{include file="bitpackage:games/admin_game_settings_inc.tpl" game=$game}
-					<div class="control-group">
+					<div class="form-group">
 						{formlabel label="Switch Game NYC 2030 Goal Value" for="energymeasures_switch_goal"}
 						{forminput}
 							<input type="text" size="50" name="energymeasures_switch_goal" value="{$gBitSystem->getConfig('energymeasures_switch_goal', 20000000)}" />
 						{/forminput}
 					</div>
 					<input type="hidden" name="page" value="{$page}" />
-					<div class="control-group submit">
+					<div class="form-group submit">
 						<input type="submit" class="btn btn-default" name="game_settings" value="{tr}Save Settings{/tr}" />
 					</div>
 				{/legend}
@@ -33,7 +33,7 @@
 				{legend legend="List Settings"}
 					<input type="hidden" name="page" value="{$page}" />
 					{foreach from=$formEnergyMeasuresLists key=item item=output}
-						<div class="control-group">
+						<div class="form-group">
 							{formlabel label=$output.label for=$item}
 							{forminput}
 								{html_checkboxes name="$item" values="y" checked=$gBitSystem->getConfig($item) labels=false id=$item}
@@ -42,7 +42,7 @@
 						</div>
 					{/foreach}
 				{/legend}
-				<div class="control-group submit">
+				<div class="form-group submit">
 					<input type="submit" class="btn btn-default" name="energymeasures_settings" value="{tr}Change preferences{/tr}" />
 				</div>
 			{/form}
