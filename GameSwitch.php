@@ -44,7 +44,7 @@ class GameSwitch extends BitGame {
 
 		$gBitSmarty->assign_by_ref( 'game', $this->mGameSettings );
 
-		$gBitThemes->loadJavascript( UTIL_PKG_PATH."/javascript/libs/jquery/min/jquery.js", FALSE, 10 );
+		$gBitThemes->loadJavascript( UTIL_PKG_PATH."javascript/jquery/min/jquery.js", FALSE, 10 );
 
 		$gBitThemes->loadJavascript( STORAGE_PKG_PATH."/".ENERGYMEASURES_CACHE_DIR."/energymeasures.js", TRUE, 900);
 
